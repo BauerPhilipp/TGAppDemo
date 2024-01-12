@@ -1,0 +1,32 @@
+VisualElement {
+}
+
+.contentButtonSingle {
+    width: 350px;
+    height: 350px;
+}
+
+.contentButton {
+    flex-grow: 0;
+    height: 125px;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-right: 18px;
+    margin-bottom: 25px;
+    margin-left: 44px;
+}
+
+.contentButtonContainer {
+    flex-grow: 0;
+    margin-top: 44px;
+    margin-right: 44px;
+    margin-bottom: 103px;
+    margin-left: 44px;
+}
+
+.buttonText {
+    font-size: 44px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    flex-grow: 1;
+}
