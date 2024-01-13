@@ -4,7 +4,7 @@
         <ui:ScrollView horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" name="ScrollViewMain" style="flex-grow: 1;">
             <ui:VisualElement name="Canvas" style="flex-grow: 1; background-color: rgb(255, 255, 255);">
                 <ui:VisualElement name="Header" style="flex-grow: 0; height: 500px; background-image: url(&apos;project://database/Assets/Textures/Logo_TicketGretchen_Header.png?fileID=2800000&amp;guid=97067c0b469da8145b81d46ee58267a5&amp;type=3#Logo_TicketGretchen_Header&apos;); flex-direction: row; margin-bottom: 100px;">
-                    <ui:VisualElement name="HeaderHeyButton" style="flex-grow: 1; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 44px;">
+                    <ui:VisualElement name="CountryButton" style="flex-grow: 1; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 44px;">
                         <ui:Label text="Hey&#10;Wien," style="font-size: 92px; -unity-text-align: lower-left; -unity-font-style: bold; flex-grow: 1;" />
                         <ui:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgb(154, 29, 104); height: 15px; width: 235px; bottom: 15px;" />
                     </ui:VisualElement>
@@ -17,7 +17,7 @@
                     <ui:VisualElement name="ForYouScroller">
                         <ui:ScrollView horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" mode="Horizontal">
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
-                                <ui:Button class="contentButtonSingle" />
+                                <ui:VisualElement name="TestButton" style="flex-grow: 1; width: 350px; height: 350px; background-color: rgb(76, 123, 52);" />
                                 <ui:Label text="Intro Aktion:&#10;Dialogues" class="buttonText" />
                             </ui:VisualElement>
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
