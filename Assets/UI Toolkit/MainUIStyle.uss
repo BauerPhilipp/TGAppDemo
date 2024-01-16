@@ -1,11 +1,6 @@
 VisualElement {
 }
 
-.contentButtonSingle {
-    width: 350px;
-    height: 350px;
-}
-
 .contentButton {
     flex-grow: 0;
     height: 125px;
@@ -22,11 +17,21 @@ VisualElement {
     margin-right: 44px;
     margin-bottom: 103px;
     margin-left: 44px;
+    height: 500px;
 }
 
 .buttonText {
-    font-size: 44px;
+    font-size: 34px;
     -unity-font-style: bold;
     -unity-text-align: middle-center;
     flex-grow: 1;
+}
+
+.contentButtonSingle {
+    width: 350px;
+    height: 350px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
 }

@@ -17,12 +17,12 @@
                     <ui:VisualElement name="ForYouScroller">
                         <ui:ScrollView horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" mode="Horizontal">
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
-                                <ui:VisualElement name="TestButton" style="flex-grow: 1; width: 350px; height: 350px; background-color: rgb(76, 123, 52);" />
+                                <ui:VisualElement name="IntroButton" class="contentButtonSingle" style="background-image: url(&apos;project://database/Assets/Textures/Button%20Images/1.png?fileID=2800000&amp;guid=ff8a92af8e400b144848e408c389e2a3&amp;type=3#1&apos;);" />
                                 <ui:Label text="Intro Aktion:&#10;Dialogues" class="buttonText" />
                             </ui:VisualElement>
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
-                                <ui:Button class="contentButtonSingle" />
-                                <ui:Label text="Intro Aktion:&#10;Dialogues" class="buttonText" />
+                                <ui:Button name="MozartButton" class="contentButtonSingle" style="background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/Textures/Button%20Images/2.png?fileID=2800000&amp;guid=fcf7528d57a80ab49af0eb3d543591b0&amp;type=3#2&apos;);" />
+                                <ui:Label text="Mozartwoche 2024" class="buttonText" />
                             </ui:VisualElement>
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
                                 <ui:Button class="contentButtonSingle" />
@@ -37,11 +37,11 @@
                     <ui:VisualElement name="CommingSoonScroller">
                         <ui:ScrollView horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" mode="Horizontal">
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
-                                <ui:Button class="contentButtonSingle" />
+                                <ui:Button class="contentButtonSingle" style="background-image: url(&apos;project://database/Assets/Textures/Button%20Images/4.png?fileID=2800000&amp;guid=6a9a93d7d294e154a97c282cdbbb53fe&amp;type=3#4&apos;); background-color: rgba(255, 255, 255, 0);" />
                                 <ui:Label text="Intro Aktion:&#10;Dialogues" class="buttonText" />
                             </ui:VisualElement>
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
-                                <ui:Button class="contentButtonSingle" />
+                                <ui:Button class="contentButtonSingle" style="background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/Textures/Button%20Images/5.png?fileID=2800000&amp;guid=15140a3699677554c8829993022d7f37&amp;type=3#5&apos;);" />
                                 <ui:Label text="Intro Aktion:&#10;Dialogues" class="buttonText" />
                             </ui:VisualElement>
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
