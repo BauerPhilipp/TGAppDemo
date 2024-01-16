@@ -25,8 +25,8 @@
                                 <ui:Label text="Mozartwoche 2024" class="buttonText" />
                             </ui:VisualElement>
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
-                                <ui:Button class="contentButtonSingle" />
-                                <ui:Label text="Intro Aktion:&#10;Dialogues" class="buttonText" />
+                                <ui:Button class="contentButtonSingle" style="background-image: url(&apos;project://database/Assets/Textures/Button%20Images/3.png?fileID=2800000&amp;guid=d7f2c667c0214db4da5c9228d4917ce1&amp;type=3#3&apos;); background-color: rgba(255, 255, 255, 0);" />
+                                <ui:Label text="Aktionen" class="buttonText" />
                             </ui:VisualElement>
                         </ui:ScrollView>
                     </ui:VisualElement>
@@ -38,15 +38,15 @@
                         <ui:ScrollView horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Hidden" mode="Horizontal">
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
                                 <ui:Button class="contentButtonSingle" style="background-image: url(&apos;project://database/Assets/Textures/Button%20Images/4.png?fileID=2800000&amp;guid=6a9a93d7d294e154a97c282cdbbb53fe&amp;type=3#4&apos;); background-color: rgba(255, 255, 255, 0);" />
-                                <ui:Label text="Intro Aktion:&#10;Dialogues" class="buttonText" />
+                                <ui:Label text="Heute" class="buttonText" />
                             </ui:VisualElement>
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
                                 <ui:Button class="contentButtonSingle" style="background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/Textures/Button%20Images/5.png?fileID=2800000&amp;guid=15140a3699677554c8829993022d7f37&amp;type=3#5&apos;);" />
-                                <ui:Label text="Intro Aktion:&#10;Dialogues" class="buttonText" />
+                                <ui:Label text="Morgen" class="buttonText" />
                             </ui:VisualElement>
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
-                                <ui:Button class="contentButtonSingle" />
-                                <ui:Label text="Intro Aktion:&#10;Dialogues" class="buttonText" />
+                                <ui:Button class="contentButtonSingle" style="background-image: url(&apos;project://database/Assets/Textures/Button%20Images/6.png?fileID=2800000&amp;guid=3d53668dba6c50b4f895232a115fe4bf&amp;type=3#6&apos;);" />
+                                <ui:Label text="Am Wochenende" class="buttonText" />
                             </ui:VisualElement>
                         </ui:ScrollView>
                     </ui:VisualElement>
@@ -73,8 +73,29 @@
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:ScrollView>
-        <ui:VisualElement name="Footer" style="flex-grow: 0; height: 10%;">
-            <ui:VisualElement style="flex-grow: 1; background-color: rgb(255, 255, 255);" />
+        <ui:VisualElement name="Footer" style="flex-grow: 1; height: 10%; align-items: center; justify-content: center; width: auto;">
+            <ui:VisualElement name="FooterContainer" style="flex-grow: 1; background-color: rgb(255, 255, 255); flex-direction: row; align-items: center; justify-content: center; flex-shrink: 1; width: 100%; border-left-color: rgb(183, 183, 183); border-right-color: rgb(183, 183, 183); border-top-color: rgb(183, 183, 183); border-bottom-color: rgb(183, 183, 183); border-top-width: 3px; border-right-width: 3px; border-bottom-width: 3px; border-left-width: 3px;">
+                <ui:VisualElement name="FooterButton01" class="footerButton">
+                    <ui:VisualElement name="FooterButtonImage01" class="footerImage" style="background-image: url(&apos;project://database/Assets/Textures/Footer/Kategorien.png?fileID=2800000&amp;guid=39be6aeca529f0442bf8aabbb0c1037b&amp;type=3#Kategorien&apos;);" />
+                    <ui:Label text="Kategorien" class="footerText" />
+                </ui:VisualElement>
+                <ui:VisualElement name="FooterButton01" class="footerButton">
+                    <ui:VisualElement name="FooterButtonImage01" class="footerImage" style="background-image: url(&apos;project://database/Assets/Textures/Footer/Kalender.png?fileID=2800000&amp;guid=6795778e8d5bdd9479e8a211f9733d91&amp;type=3#Kalender&apos;); -unity-background-scale-mode: stretch-to-fill; -unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; -unity-slice-scale: 1px;" />
+                    <ui:Label text="Kalender" class="footerText" />
+                </ui:VisualElement>
+                <ui:VisualElement name="FooterButton01" class="footerButton">
+                    <ui:VisualElement name="FooterButtonImage01" class="footerImage" style="background-image: url(&apos;project://database/Assets/Textures/Footer/Spielstaetten.png?fileID=2800000&amp;guid=766cc6870d69129448ffa00d1cb4f7b1&amp;type=3#Spielstaetten&apos;);" />
+                    <ui:Label text="Spielstätten" class="footerText" />
+                </ui:VisualElement>
+                <ui:VisualElement name="FooterButton01" class="footerButton">
+                    <ui:VisualElement name="FooterButtonImage01" class="footerImage" style="background-image: url(&apos;project://database/Assets/Textures/Footer/Community.png?fileID=2800000&amp;guid=68afbe128d3342e4db4a1c89e724bc6e&amp;type=3#Community&apos;);" />
+                    <ui:Label text="Community" class="footerText" />
+                </ui:VisualElement>
+                <ui:VisualElement name="FooterButton01" class="footerButton">
+                    <ui:VisualElement name="FooterButtonImage01" class="footerImage" style="background-image: url(&apos;project://database/Assets/Textures/Footer/Profil.png?fileID=2800000&amp;guid=f56a357254bad164498c3788df0f0a17&amp;type=3#Profil&apos;);" />
+                    <ui:Label text="Mein Menü" class="footerText" />
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
