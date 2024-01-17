@@ -61,6 +61,8 @@ public class MainUIController : MonoBehaviour
 
     private void MainScrollerMouseDown(MouseDownEvent evt)
     {
+
+        //Debug.Log("scrollerDragStarted: " + scrollerDragStarted + ", isScrolling: " + isScrolling);
         mainScrollerOffsetStart = scrollViewMain.scrollOffset;
         localMousePositionStratDrag = evt.localMousePosition + scrollViewMain.scrollOffset;
         scrollerDragStarted = true;
@@ -73,9 +75,7 @@ public class MainUIController : MonoBehaviour
 
     private void MainScrollerMouseMove(MouseMoveEvent evt)
     {
-        if (!scrollerDragStarted) { return; }
-        scrollViewMain.scrollOffset = new Vector2(0, localMousePositionStratDrag.y - evt.localMousePosition.y);
-        if(Mathf.Abs(mainScrollerOffsetStart.y - scrollViewMain.scrollOffset.y) > 100)
+        if (Mathf.Abs(mainScrollerOffsetStart.y - scrollViewMain.scrollOffset.y) > 50)
         {
             isScrolling = true;
         }
@@ -83,7 +83,8 @@ public class MainUIController : MonoBehaviour
         {
             isScrolling = false;
         }
-
+        if (!scrollerDragStarted) { return; }
+        scrollViewMain.scrollOffset = new Vector2(0, localMousePositionStratDrag.y - evt.localMousePosition.y);
     }
 
     private void IntroButtonClicked(MouseUpEvent evt)
