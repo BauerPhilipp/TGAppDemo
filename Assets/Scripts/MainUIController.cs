@@ -9,10 +9,17 @@ public class MainUIController : MonoBehaviour
     private VisualElement root;
     private VisualElement countryButton;
     private ScrollView scrollViewMain;
-    private VisualElement testButton;
+
+
+    private VisualElement introButton;
+    private VisualElement mozartButton;
+    private VisualElement aktionenButton;
 
     private Vector2 localMousePositionStratDrag;
     private bool scrollerDragStarted = false;
+
+    private Vector2 mainScrollerOffsetStart;
+    private bool isScrolling = false;
 
 
     private void Awake()
@@ -32,12 +39,18 @@ public class MainUIController : MonoBehaviour
         countryButton.RegisterCallback<ClickEvent>(OnCountryButtonClicked);
 
         scrollViewMain = root.Q<ScrollView>();
-        scrollViewMain.RegisterCallback<MouseDownEvent>(MouseDown);
-        scrollViewMain.RegisterCallback<MouseUpEvent>(MouseUp);
-        scrollViewMain.RegisterCallback<MouseMoveEvent>(MouseMove);
+        scrollViewMain.RegisterCallback<MouseDownEvent>(MainScrollerMouseDown);
+        scrollViewMain.RegisterCallback<MouseUpEvent>(MainScrollerMouseUp);
+        scrollViewMain.RegisterCallback<MouseMoveEvent>(MainScrollerMouseMove);
 
-        testButton = root.Q("TestButton");
-        testButton.RegisterCallback<MouseDownEvent>(ButtonOneClicked);
+        introButton = root.Q("IntroButton");
+        introButton.RegisterCallback<MouseUpEvent>(IntroButtonClicked);
+
+        mozartButton = root.Q("MozartButton");
+        mozartButton.RegisterCallback<MouseDownEvent>(MozartButtonClicked);
+
+        aktionenButton = root.Q("AktionenButton");
+        aktionenButton.RegisterCallback<MouseDownEvent>(AktionenButtonClicked);
 
     }
 
@@ -46,30 +59,46 @@ public class MainUIController : MonoBehaviour
         Debug.Log("Countrybutton clicked!");
     }
 
-    private void MouseDown(MouseDownEvent evt)
+    private void MainScrollerMouseDown(MouseDownEvent evt)
     {
+        mainScrollerOffsetStart = scrollViewMain.scrollOffset;
         localMousePositionStratDrag = evt.localMousePosition + scrollViewMain.scrollOffset;
         scrollerDragStarted = true;
     }
 
-    private void MouseUp(MouseUpEvent evt)
+    private void MainScrollerMouseUp(MouseUpEvent evt)
     {
         scrollerDragStarted = false;
-        //if (Vector2.Distance(dragStart, evt.localMousePosition) > 5)
-        //{
-        //    evt.StopImmediatePropagation();
-        //}
     }
 
-    private void MouseMove(MouseMoveEvent evt)
+    private void MainScrollerMouseMove(MouseMoveEvent evt)
     {
-        if(!scrollerDragStarted) { return; }
+        if (!scrollerDragStarted) { return; }
         scrollViewMain.scrollOffset = new Vector2(0, localMousePositionStratDrag.y - evt.localMousePosition.y);
+        if(Mathf.Abs(mainScrollerOffsetStart.y - scrollViewMain.scrollOffset.y) > 100)
+        {
+            isScrolling = true;
+        }
+        else
+        {
+            isScrolling = false;
+        }
+
     }
 
-    private void ButtonOneClicked(MouseDownEvent evt)
+    private void IntroButtonClicked(MouseUpEvent evt)
     {
-        Debug.Log("Testbutton clicked!");
+        if(isScrolling) { return; }
+        Debug.Log("Intro clicked!");
+    }
+
+    private void MozartButtonClicked(MouseDownEvent evt)
+    {
+        Debug.Log("Mozart clicked!");
+    }
+    private void AktionenButtonClicked(MouseDownEvent evt)
+    {
+        Debug.Log("Aktionen clicked!");
     }
 
 }

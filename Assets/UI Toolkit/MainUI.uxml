@@ -21,11 +21,11 @@
                                 <ui:Label text="Intro Aktion:&#10;Dialogues" class="buttonText" />
                             </ui:VisualElement>
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
-                                <ui:Button name="MozartButton" class="contentButtonSingle" style="background-color: rgba(255, 255, 255, 0); background-image: url(&apos;project://database/Assets/Textures/Button%20Images/2.png?fileID=2800000&amp;guid=fcf7528d57a80ab49af0eb3d543591b0&amp;type=3#2&apos;);" />
+                                <ui:VisualElement name="MozartButton" class="contentButtonSingle" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Textures/Button%20Images/2.png?fileID=2800000&amp;guid=fcf7528d57a80ab49af0eb3d543591b0&amp;type=3#2&apos;);" />
                                 <ui:Label text="Mozartwoche 2024" class="buttonText" />
                             </ui:VisualElement>
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
-                                <ui:Button class="contentButtonSingle" style="background-image: url(&apos;project://database/Assets/Textures/Button%20Images/3.png?fileID=2800000&amp;guid=d7f2c667c0214db4da5c9228d4917ce1&amp;type=3#3&apos;); background-color: rgba(255, 255, 255, 0);" />
+                                <ui:VisualElement name="AktionenButton" class="contentButtonSingle" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Textures/Button%20Images/3.png?fileID=2800000&amp;guid=d7f2c667c0214db4da5c9228d4917ce1&amp;type=3#3&apos;);" />
                                 <ui:Label text="Aktionen" class="buttonText" />
                             </ui:VisualElement>
                         </ui:ScrollView>
