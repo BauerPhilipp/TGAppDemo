@@ -1,0 +1,5 @@
+C:/Program Files (x86)/PB Programme/Projekte/Unity/Ticket Gretchen Demo/.utmp/Debug/592u3155/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Program Files (x86)/PB Programme/Projekte/Unity/Ticket Gretchen Demo/.utmp/Debug/592u3155/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Program Files (x86)/PB Programme/Projekte/Unity/Ticket Gretchen Demo/.utmp/Debug/592u3155/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Program Files (x86)/PB Programme/Projekte/Unity/Ticket Gretchen Demo/.utmp/Debug/592u3155/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Program Files (x86)/PB Programme/Projekte/Unity/Ticket Gretchen Demo/.utmp/Debug/592u3155/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir

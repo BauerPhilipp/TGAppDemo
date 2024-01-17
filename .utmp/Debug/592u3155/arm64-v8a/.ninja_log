@@ -1,0 +1,9 @@
+# ninja log v5
+1	1427	7271871732968852	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	c6afdc30969c7424
+192	1453	7271871731712095	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	e9412cf8a838551f
+395	1462	7271871733822896	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	bd88a05b7df6814e
+585	1782	7271871737471241	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b559e3b0dc491489
+800	1789	7271871737526398	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	10a0d21ad0beff5
+1005	1999	7271871739689393	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	4985eb105932d4c7
+1219	2173	7271871741439895	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	da8417d70c8ed486
+2174	3094	7271871748148376	C:/Program Files (x86)/PB Programme/Projekte/Unity/Ticket Gretchen Demo/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/Debug/592u3155/obj/arm64-v8a/libgame.so	59104f1360fc725
