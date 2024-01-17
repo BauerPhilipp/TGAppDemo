@@ -45,7 +45,7 @@
                                 <ui:Label text="Morgen" class="buttonText" />
                             </ui:VisualElement>
                             <ui:VisualElement name="ContentButtonContainer" class="contentButtonContainer">
-                                <ui:Button class="contentButtonSingle" style="background-image: url(&apos;project://database/Assets/Textures/Button%20Images/6.png?fileID=2800000&amp;guid=3d53668dba6c50b4f895232a115fe4bf&amp;type=3#6&apos;);" />
+                                <ui:Button class="contentButtonSingle" style="background-image: url(&apos;project://database/Assets/Textures/Button%20Images/6.png?fileID=2800000&amp;guid=3d53668dba6c50b4f895232a115fe4bf&amp;type=3#6&apos;); background-color: rgba(188, 188, 188, 0);" />
                                 <ui:Label text="Am Wochenende" class="buttonText" />
                             </ui:VisualElement>
                         </ui:ScrollView>

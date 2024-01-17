@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class MainUIController : MonoBehaviour
@@ -47,10 +48,10 @@ public class MainUIController : MonoBehaviour
         introButton.RegisterCallback<MouseUpEvent>(IntroButtonClicked);
 
         mozartButton = root.Q("MozartButton");
-        mozartButton.RegisterCallback<MouseDownEvent>(MozartButtonClicked);
+        mozartButton.RegisterCallback<MouseUpEvent>(MozartButtonClicked);
 
         aktionenButton = root.Q("AktionenButton");
-        aktionenButton.RegisterCallback<MouseDownEvent>(AktionenButtonClicked);
+        aktionenButton.RegisterCallback<MouseUpEvent>(AktionenButtonClicked);
 
     }
 
@@ -61,8 +62,6 @@ public class MainUIController : MonoBehaviour
 
     private void MainScrollerMouseDown(MouseDownEvent evt)
     {
-
-        //Debug.Log("scrollerDragStarted: " + scrollerDragStarted + ", isScrolling: " + isScrolling);
         mainScrollerOffsetStart = scrollViewMain.scrollOffset;
         localMousePositionStratDrag = evt.localMousePosition + scrollViewMain.scrollOffset;
         scrollerDragStarted = true;
@@ -91,15 +90,22 @@ public class MainUIController : MonoBehaviour
     {
         if(isScrolling) { return; }
         Debug.Log("Intro clicked!");
+        SceneManager.LoadScene(1);
     }
 
-    private void MozartButtonClicked(MouseDownEvent evt)
+    private void MozartButtonClicked(MouseUpEvent evt)
     {
+        if (isScrolling) { return; }
         Debug.Log("Mozart clicked!");
+        SceneManager.LoadScene(1);
+
     }
-    private void AktionenButtonClicked(MouseDownEvent evt)
+    private void AktionenButtonClicked(MouseUpEvent evt)
     {
+        if (isScrolling) { return; }
         Debug.Log("Aktionen clicked!");
+        SceneManager.LoadScene(1);
+
     }
 
 }
